@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: pcf-oracle-user-provided-service
+  datasource:
+    url: ${vcap.services.oracle-db.credentials.url}
+    username: ${vcap.services.oracle-db.credentials.username}
+    password: ${vcap.services.oracle-db.credentials.password}
+  jpa:
+    show-sql: true
